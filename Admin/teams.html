@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="teams.css">
+</head>
+
+<body>
+    <div class="leaderboard">
+        <img src="image copy.png" alt="Winner" class="theme-img">
+        <div class="Discription">
+            <div id="dis">
+                <h3>Hackathon Participant</h3>
+                <p> Date : 29/09/2024</p>
+                <input type="search" class="search" placeholder="Search" id="search" >
+            </div>
+            <div id="winner1">
+                <h3>Toppers</h3>
+                <input type="text" name="First" id="first" placeholder="Winner">
+                <input type="text" name="Second" id="second" placeholder="RunnerUp">
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <td></td>
+                    <td>Player</td>
+                    <td>Participant Id</td>
+                    <td>GitHub link</td>
+                    <td>Winners</td>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Rows will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+    <script type="module" src="Admin.js"></script>
+</body>
+
+</html>
