@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="Admin.css">
+    <link rel="stylesheet" href="teams.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Righteous&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="./bg-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <header>
+        <h1 class="righteous-regular">Admin Dashboard</h1>
+    </header>
+
+    
+    <div id="form-box">
+        
+        <section id="table">
+            <h3 id="table-head">Live Hackathons</h3>
+            <table id="tablehack">
+                <thead>
+                    <tr>
+                        <th>Sr.No</th>
+                        <th>Hackathon</th>
+                        <th>Date</th>
+    
+                        <th>Price</th>
+                        <th>View/Edit</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Rows will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </section>
+        <button id="CreateNew">Post New Hackathon</button>
+        <div id="hide">
+            <div class="imfo">
+                <input type="text" name="Name" id="name" placeholder="Name" required>
+                <input type="date" title="date" id="date" name="date" required>
+                <input type="text" name="Name" id="decs" placeholder="Description" required>
+                <input type="text" name="duration" id="duration" placeholder="Duration" required>
+                <input type="number" id="max" placeholder="Max Submission" required>
+                <input type="number" id="min" placeholder="Min Submission" required>
+                <input type="text" name="price" id="price" placeholder="Prize" required>
+                <button type="submit" id="Submit">Post</button>
+            </div>
+        </div>
+    </div>
+    <div class="leaderboard">
+        <!-- <img src="image copy.png" alt="Winner" class="theme-img"> -->
+        <div class="Discription">
+            <div id="dis">
+                <h3>Hackathon Participant</h3>
+                <!-- <p> Date : 29/09/2024</p> -->
+                <input type="search" class="search" placeholder="Search" id="search" >
+            </div>
+            <div id="winner1">
+                <h3>Toppers</h3>
+                <input type="text" name="First" id="first" placeholder="Winner">
+                <input type="text" name="Second" id="second" placeholder="RunnerUp">
+                <input type="submit" id = "updateResults" value="Post">
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <td>Sr. No</td>
+                    <td>Player</td>
+                    
+                    <td>GitHub link</td>
+                    <td>Winners</td>
+                </tr>
+            </thead>
+            <tbody id="tableBody2">
+                <!-- Rows will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+    <script type="module" src="Admin.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</body>
+
+</html>
