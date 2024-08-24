@@ -8,9 +8,9 @@
       overflow: hidden;
       /* filter: blur(1px);  */
       z-index: -1;
-  }
+}
   
-  .video-background video {
+.video-background video {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -18,13 +18,20 @@
       min-height: 100%;
       transform: translate(-50%, -50%);
       object-fit: cover;
-  }
+}
 
-.righteous-regular {
+/* .righteous-regular {
       font-family: "Righteous", sans-serif;
       font-weight: 400;
       font-style: normal;
+} */
+
+.new-amsterdam-regular {
+      font-family: "New Amsterdam", sans-serif;
+      font-weight: 400;
+      font-style: normal;
 }
+    
     
 
 body {
@@ -35,10 +42,11 @@ body {
       background-size: cover;
       color: #e0e0e0;
       /* overflow: hidden; */
+      
 }
   
   /* Header Styles */
-  header {
+header {
       color: #fff;
       font-size: 2rem;
       /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-seri */
@@ -55,11 +63,13 @@ body {
       background-size: cover;
       border-radius: 0 0 20px 20px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-      font-family: "Righteous", sans-serif;
-  }
+      /* font-family: "Righteous", sans-serif;
+       */
+      font-family: 'Spantaran';
+}
   
-  /* Gradient Overlay */
-  header::before {
+/* Gradient Overlay */
+header::before {
       content: "";
       position: absolute;
       top: 0;
@@ -69,29 +79,29 @@ body {
       background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
       z-index: 0;
       animation: gradientAnimation 5s ease-in-out infinite;
-  }
+}
   
-  /* Header Text */
-  header h1 {
+/* Header Text */
+header h1 {
       position: relative;
       z-index: 1;
       font-weight: bold;
       letter-spacing: 2px;
       text-transform: uppercase;
-  }
+}
   
-  /* Pulsate Animation */
-  @keyframes gradientAnimation {
+/* Pulsate Animation */
+@keyframes gradientAnimation {
       0% {
-          background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
       }
       50% {
-          background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
       }
       100% {
-          background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
       }
-  }
+}
   
 #table-head{
       margin: 0;
@@ -120,7 +130,7 @@ table {
 
 
 #tablehack tr:hover {
-      background-color: #ac72de;
+      background-color: #ba85fb;
       border-radius: 2px;
       color: #fff;
       font-weight: bold;
@@ -154,7 +164,7 @@ td {
 }
 
 th {
-      background-color: #9e11d6;
+      background-color: #8623ff;
       font-weight: bold;
       color: #fff;
 }
@@ -198,7 +208,7 @@ tbody tr:hover {
       padding: 10px;
       border-radius: 50px;
       border: none;
-      background-color: #6a22ad;
+      background-color: #a256ff;
       color: white;
       cursor: pointer;
       transition: background-color 0.3s, transform 0.3s;
@@ -206,7 +216,7 @@ tbody tr:hover {
 }
 
 #CreateNew:hover {
-      background-color: #7a1699;
+      background-color: #8623ff;
       transform: scale(1.05);
 }
 
@@ -226,7 +236,7 @@ tbody tr:hover {
       justify-content: center;
       width: 500px;
       left: 37%;
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: #ffffff18;
       /* padding: 20px; */
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -251,7 +261,7 @@ tbody tr:hover {
       border: none;
       margin: 10px 0;
       padding: 10px;
-      font-size: 16px;
+      font-size: 18px;
       width: calc(100% - 20px);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
       transition: background-color 0.3s, color 0.3s;
@@ -268,15 +278,17 @@ tbody tr:hover {
 }
 
 .imfo button {
-      background-color: #ad07b3;
+      width: 100%;
+      margin-top: 30px;
+      background-color: #0aa989;
       color: white;
       cursor: pointer;
       transition: background-color 0.3s, transform 0.3s;
 }
 
 .imfo button:hover {
-      background-color: #700574;
-      transform: scale(1.05);
+      background-color: #07866c;
+      transform: scale(1.01);
 }
 
 .view {
@@ -297,8 +309,76 @@ tbody tr:hover {
 .leaderboard{
       margin-top: 6rem;
       margin-bottom: 6rem;
-      /* background-color: crimson; */
-      /* display: flex; */
-      /* justify-content: center; */
-      /* align-items: center; */
+      background-color: #ffffff18;
+      border-radius: 50px;
 }
+.leaderboard table{
+      margin-bottom: 50px;
+}
+
+
+#winner1{
+      padding: 20px;
+}
+#winner1 input{
+      /* display: none; */
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    width: 300px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none; /* Remove default outline */
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Dark text color */
+}
+
+#winner1 input::placeholder {
+      color: #888888; /* Placeholder text color */
+  }
+  
+  /* Focus effect */
+#winner1 input:focus {
+      border: 2px solid #0aa989; /* Highlight border color on focus */
+      
+}
+  
+#winner1 input:hover {
+      border-color: #08a379; /* Darker border color on hover */
+}
+
+#dis input{
+      /* display: none; */
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    width: 300px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #0aa989;
+    /* outline: none; Remove default outline */
+    /* background-color: #ffffff; White background */
+    color: #333333; /* Dark text color */
+}
+
+#dis input::placeholder {
+      color: #888888; /* Placeholder text color */
+  }
+  
+  /* Focus effect */
+#dis input:focus {
+      border: 2px solid #0aa989; /* Highlight border color on focus */
+      
+}
+  
+#dis input:hover {
+      border-color: #08a379; /* Darker border color on hover */
+}
+
+
+#first{
+      margin-bottom: 20px;
+}
+
